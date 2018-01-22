@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-__author__ = 'mengdegong'
+__author__ = 'GuoJunmao'
 
 from macaca import WebDriver
 import configure
@@ -31,8 +31,8 @@ class monkey():
         print '\n[ INFO ]---------------------------------------------------'
         print '[ INFO ]测试设备: %s \n[ INFO ]测试App : %s' %(configure.udid,configure.bundleId)
         print '[ INFO ]---------------------------------------------------\n'
-        os.system('pkill -9 proxy')
-        os.system('pkill -9 node')
+        #os.system('pkill -9 proxy')
+        #os.system('pkill -9 node')
         try:
             r = RunServer(port)
             r.start()
@@ -96,10 +96,14 @@ class monkey():
 
         porps['platformName'] = 'iOS'
         porps['platformVersion'] = configure.version
-        porps['deviceName'] = 'iPhone 6s'
+        porps['deviceName'] = 'iPhone 6s plus'
         porps['autoAcceptAlerts'] = True
         porps['udid'] = configure.udid
         porps['bundleId'] = configure.bundleId
+        porps['xcodeOraId'] = configure.xcodeOraId
+        porps['xcodeSigningId'] = configure.xcodeSigningId
+        porps['automationName'] = configure.automationName
+
         # porps['proxyPort'] = configure.proxy
 
         server['hostname'] = '127.0.0.1'
@@ -117,12 +121,12 @@ class monkey():
                     "[ ERROR ] ---------------------------------------------------\n"
 
         # 守护进程
-        # finally:
-        #     print '8888'
-        #     self.driver.init()
-        #     time.sleep(5)
-        #     monkey().run_event()
-        #     print '[ RUN ] 守护进程启动成功'
+        finally:
+            print '8888'
+            self.driver.init()
+            time.sleep(5)
+            monkey().run_event()
+            print '[ RUN ] 守护进程启动成功'
 
 
 

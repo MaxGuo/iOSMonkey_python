@@ -1,16 +1,19 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-__author__ = 'mengdegong'
+__author__ = 'GuoJunmao'
 
 '''
     配置信息
 '''
-bundleId = 'com.blued.international'
+bundleId = 'com.imicrothink.MeiPingMi'
 port = 3456
 proxy = 8900
-udid = '053288d1e59d03a3802b90237f01d53cc0d4378b'
+udid = 'aa7ec70ec3683c044ad96d27e0c97e76f3386e54'
 # udid = '37adc1f3a175fe056046dc239b68d28d96d47c2f'
-version = '10.3.2'
+version = '11.2.2'
+xcodeOraId = 'MQ85R5JE8B'
+xcodeSigningId = 'iPhone Developer'
+automationName = 'XCUITest'
 
 
 '''

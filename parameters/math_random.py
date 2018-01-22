@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-__author__ = 'mengdegong'
+__author__ = 'GuoJunmao'
 
 import random
 from configure import *
