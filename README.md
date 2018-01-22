@@ -1,5 +1,5 @@
 **1,功能**
-1.可以模拟android monkey执行的方式，在IOS APP页面点击 滑动操等作,支持 ios 9和ios10
+1.可以模拟android monkey执行的方式，在IOS APP页面点击 滑动操等作,支持 ios 9和ios10，支持到11.2了
 2,支持一台ios执行
 
 **2,准备macaca环境**
